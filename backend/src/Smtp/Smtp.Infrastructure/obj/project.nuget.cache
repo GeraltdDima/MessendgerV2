@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lnwYMbJ3CLM=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Smtp/Smtp.Infrastructure/Smtp.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

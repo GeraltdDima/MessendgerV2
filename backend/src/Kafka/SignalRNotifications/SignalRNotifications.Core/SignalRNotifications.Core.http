@@ -1,0 +1,6 @@
+@SignalRNotifications.Core_HostAddress = http://localhost:5049
+
+GET {{SignalRNotifications.Core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@ErrorLogs.Core_HostAddress = http://localhost:5173
+
+GET {{ErrorLogs.Core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

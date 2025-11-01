@@ -1,0 +1,6 @@
+@Correspondences.Core_HostAddress = http://localhost:5263
+
+GET {{Correspondences.Core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

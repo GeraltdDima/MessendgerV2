@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PczoFPxPklg=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Kafka/SignalRNotifications/SignalRNotifications.Domain/SignalRNotifications.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

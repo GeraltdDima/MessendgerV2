@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0UAtqq0DX8o=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Correspondences/Correspondences.Domain/Correspondences.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
