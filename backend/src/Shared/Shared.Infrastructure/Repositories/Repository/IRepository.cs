@@ -11,7 +11,7 @@ namespace Shared.Infrastructure.Repositories.Repository
         
         Task<ICommandNotification> UpdateAsync(TId id, TEntity entity);
         
-        Task<IQueryNotification<TEntity>> GetByIdAsync(TId id);
+        Task<IQueryNotification<TEntity?>> GetByIdAsync(TId id);
         
         Task<IQueryNotification<IQueryable<TEntity>>> GetAllAsync();
     }

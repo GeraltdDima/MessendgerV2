@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared.Infrastructure\Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\Shared.DataCollection.Domain\Shared.DataCollection.Domain.csproj" />
+    <ProjectReference Include="..\..\Shared.DataBase\Shared.DataBase.Infrastructure\Shared.DataBase.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared.Redis\Shared.Redis.Infrastructure\Shared.Redis.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

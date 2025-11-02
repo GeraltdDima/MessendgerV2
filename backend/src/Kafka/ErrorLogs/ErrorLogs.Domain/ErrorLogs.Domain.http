@@ -1,6 +1,0 @@
-@ErrorLogs.Domain_HostAddress = http://localhost:5258
-
-GET {{ErrorLogs.Domain_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

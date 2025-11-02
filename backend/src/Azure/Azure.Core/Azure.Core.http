@@ -1,6 +1,0 @@
-@Azure.Core_HostAddress = http://localhost:5055
-
-GET {{Azure.Core_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

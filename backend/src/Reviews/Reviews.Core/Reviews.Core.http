@@ -1,0 +1,6 @@
+@Reviews.Core_HostAddress = http://localhost:5160
+
+GET {{Reviews.Core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

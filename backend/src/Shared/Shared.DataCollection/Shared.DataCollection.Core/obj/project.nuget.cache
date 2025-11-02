@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hV3gdEqNo30=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.DataCollection/Shared.DataCollection.Core/Shared.DataCollection.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
