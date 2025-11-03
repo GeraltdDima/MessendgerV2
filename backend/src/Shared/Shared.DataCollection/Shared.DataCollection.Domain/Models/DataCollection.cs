@@ -6,22 +6,17 @@ namespace Shared.DataCollection.Domain.Models
         where TEntity : IBaseEntity<TEntity, TId>
     {
         private IQueryable<TEntity> _entities;
-        
+
         public DataCollection(IQueryable<TEntity> entities)
         {
             _entities = entities;
         }
 
-        public IQueryable<TEntity> Entities
-        {
-            get
-            {
-                return _entities;
-            }
-        }
+        public IQueryable<TEntity> Entities => _entities;
+            
         public TId Id { get; set; }
 
-        public virtual string GetString() => "Entities";
+        public string GetString() => "Entities";
 
         public void Update(IDataCollection<TEntity, TId> entity)
         {
