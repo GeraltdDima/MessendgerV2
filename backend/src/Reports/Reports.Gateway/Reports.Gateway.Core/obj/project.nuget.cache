@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SM/BTQ+eIUw=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Reports/Reports.Gateway/Reports.Gateway.Core/Reports.Gateway.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.openapi/9.0.9/microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "/home/dima/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

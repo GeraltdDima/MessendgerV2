@@ -1,0 +1,6 @@
+@Auth.Reports.Core_HostAddress = http://localhost:5070
+
+GET {{Auth.Reports.Core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

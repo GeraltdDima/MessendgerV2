@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2MjOOMzo6ww=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Auth/Auth.Reports/Auth.Reports.Shared/Auth.Reports.Shared.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

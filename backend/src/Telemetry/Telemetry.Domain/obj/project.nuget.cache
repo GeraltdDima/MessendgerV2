@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rWCsgYQ2Rzc=",
+  "success": true,
+  "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Telemetry/Telemetry.Domain/Telemetry.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
