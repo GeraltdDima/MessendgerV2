@@ -7,7 +7,7 @@ using Shared.Redis.Infrastructure.Services.CacheService;
 
 namespace Shared.DataCollection.Infrastructure.Repositories.DataCollectionRepository
 {
-    public class DataCollectionRepository<TEntity, TId, TCollection> :
+    public abstract class DataCollectionRepository<TEntity, TId, TCollection> :
         IDataCollectionRepository<TEntity, TId>
         where TEntity : IBaseEntity<TEntity, TId>
         where TCollection : IDataCollection<TEntity, TId>, IBaseEntity<TCollection, TId>
@@ -16,27 +16,27 @@ namespace Shared.DataCollection.Infrastructure.Repositories.DataCollectionReposi
         
         private readonly ICacheService<TEntity, TId> _cache;
         private readonly ICacheService<TCollection, TId> _collectionCache;
+
+        private static readonly SemaphoreSlim _lock = new(1, 1);
         
         public DataCollectionRepository
         (
             IDataBaseService<TEntity, TId> dbService,
             ICacheService<TEntity, TId> cache, 
-            ICacheService<TCollection, TId> collectionCache
+            ICacheService<TCollection, TId> collectionCache,
+            IIdStringBuilder<TId> idStringBuilder
         )
         {
             _dbService = dbService;
             _cache = cache;
             _collectionCache = collectionCache;
+            IdStringBuilder = idStringBuilder;
         }
 
         private string CurrentCollectionString { get; set; } = string.Empty;
         
-        private IIdStringBuilder<TId> IdStringBuilder { get; set; } = new IdStringBuilder<TId>();
-
-        public void SetIdStringBuilder(IIdStringBuilder<TId> idStringBuilder)
-        {
-            IdStringBuilder = idStringBuilder;
-        }
+        private IIdStringBuilder<TId> IdStringBuilder { get; set; }
+        
 
         public async Task<ICommandNotification> AddAsync(TEntity entity)
         {
@@ -86,25 +86,40 @@ namespace Shared.DataCollection.Infrastructure.Repositories.DataCollectionReposi
         {
             if (string.IsNullOrWhiteSpace(CurrentCollectionString))
             {
-                var dbEntities = await _dbService.GetAllAsync();
-                
-                var collection = (TCollection)Activator.CreateInstance(typeof(TCollection), dbEntities.Value)!;
+                await _lock.WaitAsync();
 
-                var collectionKey = ((IDataCollection<TEntity, TId>)collection).GetString();
-                
-                CurrentCollectionString = collectionKey;
-
-                await _collectionCache.AddAsync(collection, TimeSpan.FromMinutes(10));
-
-                return dbEntities;
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(CurrentCollectionString))
+                        return await GetBaseData();
+                }
+                finally
+                {
+                    _lock.Release();
+                }
             }
-
+            
             var cachedCollection = await _collectionCache.GetByIdAsync(CurrentCollectionString);
             
             if (cachedCollection.Value == null)
                 return new AllDataNotFound<TEntity>(Enumerable.Empty<TEntity>().AsQueryable(), DateTime.UtcNow);
 
             return new AllDataFound<TEntity>(cachedCollection.Value.Entities, DateTime.UtcNow);
+        }
+
+        private async Task<IQueryNotification<IQueryable<TEntity>>> GetBaseData()
+        {
+            var dbEntities = await _dbService.GetAllAsync();
+
+            var collection = (TCollection)Activator.CreateInstance(typeof(TCollection), dbEntities.Value)!;
+
+            var collectionKey = ((IDataCollection<TEntity, TId>)collection).GetString();
+
+            CurrentCollectionString = collectionKey;
+
+            await _collectionCache.AddAsync(collection, TimeSpan.FromMinutes(10));
+
+            return dbEntities;
         }
         
         private async Task InvalidateCollectionAsync()

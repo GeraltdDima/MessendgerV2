@@ -2,7 +2,8 @@ using Shared.Domain.Models;
 
 namespace Shared.DataCollection.Domain.Models
 {
-    public class DataCollection<TEntity, TId> : IDataCollection<TEntity, TId>
+    public class DataCollection<TEntity, TId> : IDataCollection<TEntity, TId>,
+        IBaseEntity<DataCollection<TEntity, TId>, TId> 
         where TEntity : IBaseEntity<TEntity, TId>
     {
         private IQueryable<TEntity> _entities;
@@ -16,9 +17,14 @@ namespace Shared.DataCollection.Domain.Models
             
         public TId Id { get; set; }
 
-        public string GetString() => "Entities";
+        public virtual string GetString() => "Entities";
 
         public void Update(IDataCollection<TEntity, TId> entity)
+        {
+            _entities = entity.Entities;
+        }
+
+        public void Update(DataCollection<TEntity, TId> entity)
         {
             _entities = entity.Entities;
         }

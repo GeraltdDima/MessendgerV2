@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Shared.Postgres.Infrastructure.Factories.MigrationFactory
+namespace Shared.Infrastructure.Factories.MigrationFactory
 {
     public class MigrationFactory : IMigrationFactory
     {

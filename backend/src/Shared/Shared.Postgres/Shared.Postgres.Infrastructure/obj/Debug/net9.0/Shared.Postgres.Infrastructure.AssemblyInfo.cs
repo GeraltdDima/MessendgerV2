@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shared.Postgres.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa58c41645a60f26046479ea9ab319efa02ba1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+707d77cdb6b3473a22a19c71fa7673ced2b22f22")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shared.Postgres.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shared.Postgres.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

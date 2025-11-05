@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Shared.Postgres.Infrastructure.Factories.MigrationFactory
+namespace Shared.Infrastructure.Factories.MigrationFactory
 {
     public interface IMigrationFactory
     {

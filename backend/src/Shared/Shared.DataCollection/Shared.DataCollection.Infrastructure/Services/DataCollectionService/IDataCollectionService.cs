@@ -1,3 +1,4 @@
+using Shared.DataCollection.Domain.Models;
 using Shared.Domain.Models;
 using Shared.Infrastructure.Services.RepositoryService;
 
