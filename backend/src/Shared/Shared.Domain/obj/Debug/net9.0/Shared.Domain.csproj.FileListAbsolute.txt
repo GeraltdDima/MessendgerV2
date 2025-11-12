@@ -1,0 +1,13 @@
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/bin/Debug/net9.0/Shared.Domain.deps.json
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/bin/Debug/net9.0/Shared.Domain.dll
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/bin/Debug/net9.0/Shared.Domain.pdb
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.csproj.AssemblyReference.cache
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.AssemblyInfoInputs.cache
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.AssemblyInfo.cs
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.csproj.CoreCompileInputs.cache
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.sourcelink.json
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.dll
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/refint/Shared.Domain.dll
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/Shared.Domain.pdb
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Domain/obj/Debug/net9.0/ref/Shared.Domain.dll

@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ErrorLogs.Domain\ErrorLogs.Domain.csproj" />
+    <ProjectReference Include="..\..\Kafka.Infrastructure\Kafka.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1873,8 +1873,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Auth.Infrastructure": "1.0.0",
-          "Microsoft.AspNetCore": "2.3.0"
+          "Microsoft.AspNetCore": "2.3.0",
+          "Microsoft.EntityFrameworkCore": "9.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.10",
+          "Shared.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Shared.Infrastructure.dll": {}

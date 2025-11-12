@@ -12,7 +12,6 @@ namespace Auth.Domain.Models
         {
             UserName = source.UserName;
             Email = source.Email;
-            PasswordHash = source.PasswordHash;
         }
 
         public string GetString() => $"User:{Id}";

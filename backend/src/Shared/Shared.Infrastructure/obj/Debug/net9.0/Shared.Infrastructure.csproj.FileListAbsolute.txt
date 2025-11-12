@@ -1,0 +1,6 @@
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Infrastructure/obj/Debug/net9.0/Shared.Infrastructure.csproj.AssemblyReference.cache
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Infrastructure/obj/Debug/net9.0/Shared.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Infrastructure/obj/Debug/net9.0/Shared.Infrastructure.AssemblyInfoInputs.cache
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Infrastructure/obj/Debug/net9.0/Shared.Infrastructure.AssemblyInfo.cs
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Infrastructure/obj/Debug/net9.0/Shared.Infrastructure.csproj.CoreCompileInputs.cache
+/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.Infrastructure/obj/Debug/net9.0/Shared.Infrastructure.sourcelink.json
