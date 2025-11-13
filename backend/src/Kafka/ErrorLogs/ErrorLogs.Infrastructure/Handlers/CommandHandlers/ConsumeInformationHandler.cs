@@ -1,5 +1,5 @@
 using ErrorLogs.Domain.Commands;
-using ErrorLogs.Domain.Models.MessageRequest;
+using ErrorLogs.Shared.Domain.Models.MessageRequest;
 using ErrorLogs.Shared.Domain.Singleton;
 using Kafka.Infrastructure.Services.KafkaConsumerService;
 using Microsoft.Extensions.Logging;

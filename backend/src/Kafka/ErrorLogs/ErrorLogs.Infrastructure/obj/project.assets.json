@@ -1539,6 +1539,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Kafka.Shared": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.3.0"
         },
         "compile": {
@@ -1576,6 +1577,20 @@
           "bin/placeholder/Kafka.Infrastructure.dll": {}
         }
       },
+      "Kafka.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Confluent.Kafka": "2.12.0",
+          "Shared.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kafka.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kafka.Shared.dll": {}
+        }
+      },
       "Shared.DataBase.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1594,6 +1609,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "ErrorLogs.Shared": "1.0.0",
           "Shared.DataBase.Domain": "1.0.0",
           "Shared.Infrastructure": "1.0.0"
         },
@@ -3575,6 +3591,11 @@
       "type": "project",
       "path": "../../Kafka.Infrastructure/Kafka.Infrastructure.csproj",
       "msbuildProject": "../../Kafka.Infrastructure/Kafka.Infrastructure.csproj"
+    },
+    "Kafka.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../Kafka.Shared/Kafka.Shared.csproj",
+      "msbuildProject": "../../Kafka.Shared/Kafka.Shared.csproj"
     },
     "Shared.DataBase.Domain/1.0.0": {
       "type": "project",

@@ -1,6 +1,5 @@
 using ErrorLogs.Domain.Commands;
-using ErrorLogs.Domain.Models.Message;
-using ErrorLogs.Domain.Models.MessageRequest;
+using ErrorLogs.Shared.Domain.Models.MessageRequest;
 using ErrorLogs.Infrastructure.Factories.MessageDtoFactory;
 using ErrorLogs.Infrastructure.Services.MessageService;
 using ErrorLogs.Shared.Domain.Singleton;

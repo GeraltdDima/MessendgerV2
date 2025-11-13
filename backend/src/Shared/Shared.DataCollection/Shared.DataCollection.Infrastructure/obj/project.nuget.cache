@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bJ0HPBGsunU=",
+  "dgSpecHash": "Ew76GA2+IjY=",
   "success": true,
   "projectFilePath": "/home/dima/Projects/MessendgerV2/backend/src/Shared/Shared.DataCollection/Shared.DataCollection.Infrastructure/Shared.DataCollection.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "/home/dima/.nuget/packages/confluent.kafka/2.12.0/confluent.kafka.2.12.0.nupkg.sha512",
+    "/home/dima/.nuget/packages/librdkafka.redist/2.12.0/librdkafka.redist.2.12.0.nupkg.sha512",
     "/home/dima/.nuget/packages/mediatr/13.1.0/mediatr.13.1.0.nupkg.sha512",
     "/home/dima/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/dima/.nuget/packages/microsoft.aspnetcore/2.3.0/microsoft.aspnetcore.2.3.0.nupkg.sha512",

@@ -1,7 +1,7 @@
 using ErrorLogs.Shared.Domain.Enums;
 using Microsoft.AspNetCore.Http;
 
-namespace ErrorLogs.Domain.Models.MessageRequest
+namespace ErrorLogs.Shared.Domain.Models.MessageRequest
 {
     public interface IMessageRequest
     {

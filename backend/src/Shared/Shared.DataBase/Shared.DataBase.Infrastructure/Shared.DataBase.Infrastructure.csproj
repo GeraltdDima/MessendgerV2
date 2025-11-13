@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared.DataBase.Domain\Shared.DataBase.Domain.csproj" />
     <ProjectReference Include="..\..\Shared.Infrastructure\Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Kafka\ErrorLogs\ErrorLogs.Shared\ErrorLogs.Shared.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

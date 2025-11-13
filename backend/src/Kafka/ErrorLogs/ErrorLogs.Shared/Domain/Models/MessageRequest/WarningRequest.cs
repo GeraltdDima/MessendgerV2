@@ -1,11 +1,11 @@
 using ErrorLogs.Shared.Domain.Enums;
 using Microsoft.AspNetCore.Http;
 
-namespace ErrorLogs.Domain.Models.MessageRequest
+namespace ErrorLogs.Shared.Domain.Models.MessageRequest
 {
-    public class InformationRequest : IMessageRequest
+    public class WarningRequest : IMessageRequest
     {
-        public InformationRequest(string info, string stackTrace, PathString path)
+        public WarningRequest(string info, string stackTrace, PathString path)
         {
             Info = info;
             StackTrace = stackTrace;
@@ -18,6 +18,6 @@ namespace ErrorLogs.Domain.Models.MessageRequest
 
         public PathString Path { get; set; }
 
-        public MessageTypes MessageType { get; set; } = MessageTypes.Information;
+        public MessageTypes MessageType { get; set; } = MessageTypes.Warning;
     }
 }
